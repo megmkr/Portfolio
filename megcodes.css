@@ -1,7 +1,13 @@
 /*
  *	WebFont Package Licensed to Megan Mkrtchyan
  */
-
+@font-face {
+   font-family: "Nagel";
+   src: url("nagel-font-family/Nagel_Regular.woff") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
 /* Redaction Regular */
 @font-face {
    font-family: "Redaction";
@@ -193,15 +199,24 @@
 h1 {
    margin-top: 0; /* Adjust as needed */
    margin-bottom: 0; /* Adjust as needed */
+   margin-left: 0;
+   margin-right: 0;
+}
+.line {
+   width: 92%;
+   text-align: right;
+   margin-right: 5px;
+   border: none;
+   border-radius: 15px;
+   margin-top: -30px;
+   border-top: 4px solid #4357ad;
+   transition: width 0.3s ease;
+}
+.line.active {
+   width: 50%;
 }
 
 /* Menu Styling*/
-
-.wrapper {
-   width: 100%;
-   height: 100vh;
-   text-align: justify;
-}
 
 .nav div {
    height: 4px;
@@ -234,6 +249,70 @@ h1 {
 .nav:hover {
    color: white;
    background-color: #d0b4de;
+}
+
+/* off-screen-menu */
+.off-screen-menu {
+   font-family: "Nagel";
+   width: 100%;
+   height: 80px; /* Adjust height to fit the items */
+   position: fixed;
+   top: 0; /* Fixed at top, no slide */
+   left: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: left;
+   text-align: center;
+   font-size: 1.5rem; /* Adjust font size as desired */
+   opacity: 0; /* Initially hidden */
+   /*transform: translateY(-20px); /* Slight upward offset */
+   transition: opacity 0.5s ease, transform 0.3s ease;
+   z-index: 10; /* Ensure it stays on top */
+}
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+.off-screen-menu.active li:nth-child(1) {
+   animation-delay: 0.1s;
+}
+.off-screen-menu.active li:nth-child(2) {
+   animation-delay: 0.2s;
+}
+.off-screen-menu.active li:nth-child(3) {
+   animation-delay: 0.3s;
+}
+/* Align items in a row */
+.off-screen-menu ul {
+   list-style: none;
+   display: flex;
+   gap: 40px; /* Space between items */
+   padding: 40px;
+   margin: 0;
+}
+
+/* Style each menu item */
+.off-screen-menu li {
+   border-radius: 5px;
+   padding: 10px 20px;
+   color: #4357ad;
+   cursor: pointer;
+   animation: fadeIn 0.5s forwards;
+}
+
+.off-screen-menu li:hover {
+   color: white;
+   background-color: #d0b4de; /* Change color on hover */
+}
+
+/* Fade in the menu when active */
+.off-screen-menu.active {
+   opacity: 1; /* Fully visible */
+   transform: translateY(0); /* Remove upward offset */
 }
 
 /* Glitch Effect */
@@ -400,11 +479,11 @@ h1 {
    }
 } */
 
+/* Different Glitch Effect */
 .glitch {
    position: relative;
    text-shadow: rgb(18, 32, 122) 10px 10px 0;
 }
-
 .glitch:before,
 .glitch:after {
    display: block;
@@ -414,19 +493,16 @@ h1 {
    left: 0;
    opacity: 0.8;
 }
-
 .glitch:before {
    animation: glitch-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
    color: #0ff;
    z-index: -1;
 }
-
 .glitch:after {
    animation: glitch-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
    color: #ff00ff;
    z-index: -2;
 }
-
 @keyframes glitch-color {
    0% {
       transform: translate(0);
