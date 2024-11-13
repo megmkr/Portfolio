@@ -190,32 +190,17 @@
    font-style: normal;
    font-display: swap;
 }
-h1,
-h2,
-h3,
-h5,
-h6 {
+h1 {
    margin-top: 0; /* Adjust as needed */
    margin-bottom: 0; /* Adjust as needed */
 }
+
+/* Menu Styling*/
+
 .wrapper {
    width: 100%;
    height: 100vh;
    text-align: justify;
-}
-h4 {
-   font-weight: 100;
-   font-size: 28px;
-   margin: 0;
-   padding: 8em 0 1em 0;
-}
-.btn_one {
-   text-decoration: none;
-   color: #4357ad;
-   font-weight: 100;
-   border: 1px #fbbc05 solid;
-   padding: 1em 3em;
-   border-radius: 100px;
 }
 
 .nav div {
@@ -226,10 +211,14 @@ h4 {
    transition: 0.3s;
 }
 .nav {
+   border-radius: 5px;
+   padding: 10px 20px;
    width: 30px;
    display: block;
    margin: 1em 0 0 1em;
 }
+
+/* Nav Animation */
 .one {
    width: 30px;
 }
@@ -239,14 +228,18 @@ h4 {
 .three {
    width: 25px;
 }
-
 .nav:hover div {
    width: 30px;
 }
+.nav:hover {
+   color: white;
+   background-color: #d0b4de;
+}
+
+/* Glitch Effect */
 .main-text-shadow {
    text-shadow: rgb(18, 32, 122) 10px 10px 0;
 }
-
 .glitch-effect {
    position: relative;
    margin: 0 auto;
@@ -254,7 +247,6 @@ h4 {
    animation: opacity 2s infinite linear;
    text-shadow: rgb(18, 32, 122) 10px 10px 0;
 }
-
 .glitch-effect:before {
    content: attr(data-text);
    position: absolute;
@@ -266,7 +258,6 @@ h4 {
    clip: rect(0, 900px, 0, 0);
    animation: glitch-anim-first 3s infinite linear alternate-reverse;
 }
-
 .glitch-effect:after {
    content: attr(data-text);
    position: absolute;
@@ -278,7 +269,6 @@ h4 {
    clip: rect(0, 900px, 0, 0);
    animation: glitch-anim-second 2s infinite linear alternate-reverse;
 }
-
 @keyframes glitch-anim-second {
    0% {
       clip: rect(57px, 9999px, 56px, 0);
@@ -344,7 +334,6 @@ h4 {
       clip: rect(43px, 9999px, 2px, 0);
    }
 }
-
 @keyframes glitch-anim-first {
    0% {
       clip: rect(50px, 9999px, 21px, 0);
