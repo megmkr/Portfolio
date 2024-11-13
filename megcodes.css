@@ -243,3 +243,6 @@ h4 {
 .nav:hover div {
    width: 30px;
 }
+.main-text-shadow {
+   text-shadow: rgb(18, 32, 122) 10px 10px 0;
+}
