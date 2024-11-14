@@ -259,11 +259,10 @@ h1 {
 /* off-screen-menu */
 .off-screen-menu {
    font-family: "Nagel";
-   width: 100%;
+   width: 60%;
    height: 80px; /* Adjust height to fit the items */
    position: absolute;
    margin-top: 7px;
-   margin-left: 0px;
    top: 0; /* Fixed at top, no slide */
    left: 100px;
    display: flex;
@@ -281,6 +280,7 @@ h1 {
    opacity: 0;
    color: #4357ad;
    animation: fadeIn 1s forwards;
+   pointer-events: none; /* make unclickable */
 }
 /* Define the fade-in animation */
 @keyframes fadeIn {
