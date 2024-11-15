@@ -221,7 +221,11 @@ h1 {
 .line.active {
    width: 45%;
 }
-
+.house-icon:hover {
+   border-radius: 5px;
+   padding: 0px;
+   background-color: #d0b4de;
+}
 /* Menu Styling*/
 
 .nav div {
@@ -233,9 +237,8 @@ h1 {
 }
 .nav {
    border-radius: 5px;
-   padding: 10px 20px;
+   padding: 15px;
    width: 30px;
-   display: block;
 }
 
 /* Nav Animation */
@@ -259,10 +262,10 @@ h1 {
 /* off-screen-menu */
 .off-screen-menu {
    font-family: "Nagel";
-   width: 60%;
+   width: 45%;
    height: 80px; /* Adjust height to fit the items */
    position: absolute;
-   margin-top: 7px;
+   margin-top: 0px;
    top: 0; /* Fixed at top, no slide */
    left: 100px;
    display: flex;
@@ -280,7 +283,7 @@ h1 {
    opacity: 0;
    color: #4357ad;
    animation: fadeIn 1s forwards;
-   pointer-events: none; /* make unclickable */
+   pointer-events: visible;
 }
 /* Define the fade-in animation */
 @keyframes fadeIn {
@@ -294,7 +297,7 @@ h1 {
 
 .off-screen-menu li:hover {
    color: white;
-   background-color: #d0b4de;
+   background-color: #4357ad;
 }
 
 .off-screen-menu.active li:nth-child(1) {
