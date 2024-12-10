@@ -1,0 +1,116 @@
+/* Base Styles */
+body {
+   background-color: #fdf5e6;
+   margin: 0;
+   font-family: "Courier New", Courier, monospace;
+   overflow-x: hidden;
+}
+
+/* Navigation Menu */
+nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   background-color: #fdf5e6;
+   border-bottom: 2px solid #ddd;
+   z-index: 1000;
+}
+
+nav a {
+   text-decoration: none;
+   color: #003366;
+   font-size: 1rem;
+   margin: 0 15px;
+   transition: color 0.3s ease;
+}
+
+nav a:hover {
+   color: #ff6600;
+}
+
+.menu-icon {
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
+.home-icon {
+   font-size: 1.5rem;
+   color: #003366;
+}
+
+/* Typography Grid */
+.text-wrapper {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   gap: 2vw;
+   padding: 5vw;
+   align-items: center;
+   justify-content: center;
+}
+
+.text-wrapper .text {
+   font-size: calc(6px + 1.8vw); /* Reduced font size */
+   line-height: 1.2;
+   font-weight: bold;
+   text-align: center;
+   color: #000;
+   opacity: 0.8;
+}
+
+/* Emphasized text */
+.text.big {
+   font-size: calc(10px + 3vw); /* Larger but scaled down */
+   color: #ff9900;
+}
+
+.text.pixelated {
+   font-family: "Press Start 2P", cursive; /* Pixelated effect */
+   text-shadow: 1px 1px #333333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   nav a {
+      font-size: 0.9rem;
+      margin: 0 10px;
+   }
+
+   .text-wrapper {
+      gap: 1.5vw;
+      padding: 4vw;
+   }
+
+   .text {
+      font-size: calc(5px + 1.5vw);
+   }
+
+   .text.big {
+      font-size: calc(8px + 2.5vw);
+   }
+}
+
+@media (max-width: 480px) {
+   nav a {
+      font-size: 0.8rem;
+      margin: 0 5px;
+   }
+
+   .text-wrapper {
+      grid-template-columns: 1fr; /* Single column for small screens */
+      gap: 1vw;
+      padding: 3vw;
+   }
+
+   .text {
+      font-size: calc(4px + 1.2vw);
+   }
+
+   .text.big {
+      font-size: calc(6px + 2vw);
+   }
+}
