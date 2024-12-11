@@ -218,6 +218,29 @@ h1 {
    border-top: 4px solid #4357ad;
    transition: width 1s ease;
 }
+@media (max-width: 1300px) {
+   .line.active {
+      width: 35% !important; /* Reduce width on medium screens */
+   }
+}
+
+@media (max-width: 1024px) {
+   .line.active {
+      width: 25% !important; /* Reduce width on medium screens */
+   }
+}
+
+@media (max-width: 768px) {
+   .line.active {
+      width: 10% !important; /* Further reduce width for smaller screens */
+   }
+}
+
+@media (max-width: 730px) {
+   .line.active {
+      width: 0% !important; /* Further reduce width for very small screens */
+   }
+}
 .line.active {
    width: 45%;
 }
@@ -266,11 +289,9 @@ h1 {
 /* off-screen-menu */
 .off-screen-menu {
    font-family: "Nagel";
-   width: 45%;
    height: auto; /* Allow height to adjust dynamically */
    position: absolute;
-   top: 0;
-   left: 100px;
+   left: 70px;
    display: flex;
    align-items: center;
    justify-content: left;
@@ -278,7 +299,8 @@ h1 {
    font-size: 1.3vw; /* Relative font size */
    opacity: 0;
    transition: opacity 0.5s ease;
-   pointer-events: none;
+   pointer-events: none; /*can't click */
+   margin-right: 20px;
 }
 /* Style each menu item */
 .off-screen-menu li {
