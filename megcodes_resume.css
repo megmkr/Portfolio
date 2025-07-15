@@ -1,0 +1,471 @@
+/*
+ *	WebFont Package Licensed to Megan Mkrtchyan
+ */
+@font-face {
+   font-family: "Nagel";
+   src: url("nagel-font-family/Nagel_Regular.woff") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+/* Redaction Regular */
+@font-face {
+   font-family: "Redaction";
+   src: url("woff2/Redaction-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction Italic */
+@font-face {
+   font-family: "Redaction";
+   src: url("woff2/Redaction-Italic.woff2") format("woff2");
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+
+/* Redaction Bold */
+@font-face {
+   font-family: "Redaction";
+   src: url("woff2/Redaction-Bold.woff2") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 10 Regular */
+@font-face {
+   font-family: "Redaction 10";
+   src: url("woff2/Redaction10-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 10 Regular Italic */
+@font-face {
+   font-family: "Redaction 10";
+   src: url("woff2/Redaction10-Italic.woff2") format("woff2");
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+
+/* Redaction 10 Bold */
+@font-face {
+   font-family: "Redaction 10";
+   src: url("woff2/Redaction10-Bold.woff2") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 100 Regular */
+@font-face {
+   font-family: "Redaction 100";
+   src: url("woff2/Redaction100-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 100 Regular Italic */
+@font-face {
+   font-family: "Redaction 100";
+   src: url("woff2/Redaction100-Italic.woff2") format("woff2");
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+
+/* Redaction 100 Bold */
+@font-face {
+   font-family: "Redaction 100";
+   src: url("woff2/Redaction100-Bold.woff2") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 20 Regular */
+@font-face {
+   font-family: "Redaction 20";
+   src: url("woff2/Redaction20-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 20 Regular Italic */
+@font-face {
+   font-family: "Redaction 20";
+   src: url("woff2/Redaction20-Italic.woff2") format("woff2");
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+
+/* Redaction 20 Bold */
+@font-face {
+   font-family: "Redaction 20";
+   src: url("woff2/Redaction20-Bold.woff2") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 35 Regular */
+@font-face {
+   font-family: "Redaction 35";
+   src: url("woff2/Redaction35-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 35 Regular Italic */
+@font-face {
+   font-family: "Redaction 35";
+   src: url("woff2/Redaction35-Italic.woff2") format("woff2");
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+
+/* Redaction 35 Bold */
+@font-face {
+   font-family: "Redaction 35";
+   src: url("woff2/Redaction35-Bold.woff2") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 50 Regular */
+@font-face {
+   font-family: "Redaction 50";
+   src: url("woff2/Redaction50-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 50 Regular Italic */
+@font-face {
+   font-family: "Redaction 50";
+   src: url("woff2/Redaction50-Italic.woff2") format("woff2");
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+
+/* Redaction 50 Bold */
+@font-face {
+   font-family: "Redaction 50";
+   src: url("woff2/Redaction50-Bold.woff2") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 70 Regular */
+@font-face {
+   font-family: "Redaction 70";
+   src: url("woff2/Redaction70-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Redaction 70 Regular Italic */
+@font-face {
+   font-family: "Redaction 70";
+   src: url("woff2/Redaction70-Italic.woff2") format("woff2");
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+
+/* Redaction 70 Bold */
+@font-face {
+   font-family: "Redaction 70";
+   src: url("woff2/Redaction70-Bold.woff2") format("woff2");
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+.footer {
+   font-family: Nagel;
+   font-size: 1.2rem;
+   color: #4357ad;
+   text-align: center;
+}
+.line {
+   width: 92%;
+   text-align: right;
+   margin-right: 5px;
+   border: none;
+   border-radius: 15px;
+
+   border-top: 4px solid #4357ad;
+   transition: width 1s ease;
+}
+@media (max-width: 1300px) {
+   .line.active {
+      width: 35% !important; /* Reduce width on medium screens */
+   }
+}
+
+@media (max-width: 1024px) {
+   .line.active {
+      width: 25% !important; /* Reduce width on medium screens */
+   }
+}
+
+@media (max-width: 768px) {
+   .line.active {
+      width: 10% !important; /* Further reduce width for smaller screens */
+   }
+}
+
+@media (max-width: 730px) {
+   .line.active {
+      width: 0% !important; /* Further reduce width for very small screens */
+   }
+}
+.line.active {
+   width: 45%;
+}
+.house-icon:hover {
+   border-radius: 5px;
+   padding: 0px;
+   background-color: #d0b4de;
+}
+
+/* Menu Styling*/
+
+.nav div {
+   height: 4px;
+   background-color: #4357ad;
+   margin: 5px 0;
+   border-radius: 25px;
+   transition: 0.3s;
+}
+.nav {
+   border-radius: 5px;
+   padding: 15px;
+   width: 30px;
+}
+/* Nav Animation */
+.one {
+   width: 30px;
+}
+.two {
+   width: 20px;
+}
+.three {
+   width: 25px;
+}
+.nav:hover div {
+   width: 30px;
+}
+.nav:hover {
+   color: white;
+   background-color: #d0b4de;
+}
+
+/* off-screen-menu */
+.off-screen-menu {
+   font-family: "Nagel";
+   height: auto; /* Allow height to adjust dynamically */
+   position: absolute;
+   left: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: left;
+   text-align: center;
+   font-size: 1.3vw; /* Relative font size */
+   opacity: 0;
+   transition: opacity 0.5s ease;
+   pointer-events: none; /*can't click */
+   margin-right: 20px;
+}
+/* Style each menu item */
+.off-screen-menu li {
+   border-radius: 5px;
+   padding: 10px 20px;
+   opacity: 0;
+   color: #4357ad;
+   animation: fadeIn 1s forwards;
+   pointer-events: none;
+}
+.off-screen-menu.active li {
+   pointer-events: auto;
+   cursor: pointer;
+}
+@media (max-width: 1024px) {
+   .off-screen-menu {
+      width: 70%;
+      font-size: 1.5vw;
+   }
+}
+
+@media (max-width: 768px) {
+   .off-screen-menu {
+      width: 90%;
+      font-size: 1.8vw;
+   }
+}
+
+@media (max-width: 480px) {
+   .off-screen-menu {
+      width: 100%;
+      font-size: 2vw;
+   }
+}
+
+/* Adjust padding for medium screens */
+@media (max-width: 1024px) {
+   .off-screen-menu li {
+      padding: 8px 16px;
+   }
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+   .off-screen-menu li {
+      padding: 6px 12px;
+   }
+}
+
+/* Adjust padding for very small screens */
+@media (max-width: 480px) {
+   .off-screen-menu li {
+      padding: 4px 8px;
+   }
+}
+/* Define the fade-in animation */
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+.off-screen-menu li:hover {
+   color: white;
+   background-color: #4357ad;
+}
+/* Align items in a row */
+.off-screen-menu ul {
+   list-style: none; /* Remove bullet points */
+   display: flex; /* Display list items horizontally*/
+   gap: 30px; /* Space between items */
+}
+/* Fade in the menu when active */
+.off-screen-menu.active {
+   opacity: 1; /* Fully visible */
+   pointer-events: auto;
+}
+
+body {
+   font-family: "Nagel", sans-serif;
+   color: #4357ad;
+   background-color: #fdf5e6;
+   margin: 0;
+   padding: 0;
+}
+.container {
+   width: 80%;
+   margin: 50px auto;
+}
+h1,
+h2 {
+   color: #4357ad;
+   border-bottom: 2px solid #d0b4de;
+   padding-bottom: 5px;
+   justify-content: center;
+}
+.section {
+   margin-bottom: 40px;
+}
+.card {
+   background-color: #ffffff;
+   border: 1px solid #d0b4de;
+   border-radius: 10px;
+   padding: 20px;
+   margin-bottom: 20px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ul {
+   list-style-type: disc;
+   padding-left: 20px;
+}
+ul li {
+   margin-bottom: 8px;
+}
+.tags {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+.tag {
+   background-color: #4357ad;
+   color: white;
+   border-radius: 5px;
+   padding: 5px 10px;
+   font-size: 0.9em;
+}
+.glitch {
+   position: relative;
+   text-shadow: rgb(18, 32, 122) 10px 10px 0;
+}
+.glitch:before,
+.glitch:after {
+   display: block;
+   content: attr(data-glitch);
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0.8;
+}
+.glitch:before {
+   animation: glitch-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+   color: #0ff;
+   z-index: -1;
+}
+.glitch:after {
+   animation: glitch-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+   color: #ff00ff;
+   z-index: -2;
+}
+@keyframes glitch-color {
+   0% {
+      transform: translate(0);
+   }
+
+   20% {
+      transform: translate(-3px, 3px);
+   }
+
+   40% {
+      transform: translate(-3px, -3px);
+   }
+
+   60% {
+      transform: translate(3px, 3px);
+   }
+
+   80% {
+      transform: translate(3px, -3px);
+   }
+
+   to {
+      transform: translate(0);
+   }
+}
