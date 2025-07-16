@@ -5,7 +5,7 @@
    <head class="wrapper">
       <meta charset="utf-8" />
       <title>MegCodes</title>      <!-- CSS Code -->
-      <link rel="stylesheet" href="../megcodes_resume.css" />
+      <link rel="stylesheet" href="../megcodes.css" />
       <!-- Favicon -->
       <link rel="icon" type="../Images/favicon.png" href="../Images/favicon.png" />
       <!-- Menu -->
@@ -29,68 +29,22 @@
          <a href="../index.html" class = "house-icon"> <img border="0" alt="Home" src="../Images/House.png" width="60" height="60"> </a>
          <script src="../app.js"></script>
       </div>
-      <style>
-  body {
-    margin: 0;
-  }
-
-  .main-layout {
-    display: flex;
-    height: 100vh;
-    flex-direction: row;
-  }
-
-  .header {
-    width: 30vw;
-    min-width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-  }
-
-  .header h1 {
-    font-family: 'Redaction 50';
-    font-size: 6vw;
-    text-align: center;
-  }
-
-  .content {
-    flex-grow: 1;
-    overflow-y: auto;
-    padding: 40px;
-  }
-
-  /* --------- Mobile Layout --------- */
-  @media (max-width: 768px) {
-    .main-layout {
-      flex-direction: column;
-    }
-
-    .header {
-      width: 100%;
-    }
-
-    .header h1 {
-      writing-mode: initial;
-      font-size: 3rem;
-    }
-  }
-</style>
+      
     </head>
-    <body style="margin: 0; padding: 0; font-family: sans-serif;">
-    <div class = "main-layout" >
+    <body>
         <div class="header" >
-            <h1 style=" font-family: 'Redaction 50'">
-            <span style="font-family: 'Redaction 20';">R</span><span style="font-family: 'Redaction 35';">e</span><span style="font-family: 'Redaction 50';">s</span><span style="font-family: 'Redaction 70';">u</span><span style="font-family: 'Redaction 70';  ">m</span><span style="font-family: 'Redaction 100'; ">e</span>
-
+            <h1 style=" text-align: center; color: #4357ad; font-size:10vw">
+                <span class="glitch" data-glitch="R" style="font-family: 'Redaction 50'; display: inline-block; position: relative;" data-text="R">R</span>
+                <span class="glitch" data-glitch="e" style="font-family: 'Redaction 30'; display: inline-block; position: relative;" data-text="e">e</span>
+                <span class="glitch" data-glitch="s" style="font-family: 'Redaction 50'; display: inline-block; position: relative;" data-text="s">s</span>
+                <span class="glitch" data-glitch="u" style="font-family: 'Redaction 20'; display: inline-block; position: relative;" data-text="u">u</span>
+                <span class="glitch" data-glitch="m" style="font-family: 'Redaction 70'; display: inline-block; position: relative;" data-text="m">m</span>
+                <span class="glitch" data-glitch="e" style="font-family: 'Redaction 20'; display: inline-block; position: relative;" data-text="e">e</span>
             </h1>
         </div>
         <div class = "content" style="font-family: 'Nagel';">
           <div class="section" id="education">
-              <h2>Education</h2>
+              <h2 class="teal">Education</h2>
               <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: baseline;">
                     <span style="font-weight: bold; font-size: 1.2em;">Point Loma Nazarene University</span>
@@ -100,14 +54,13 @@
             
                   <ul>
                       <li>GPA: 3.94</li>
-                      <li>Dean’s List: FA ‘21-SP ‘25</li>
-                      <li>Yearbook Writer</li>
+                      <li>Dean’s List, FA ‘21-SP ‘24</li>
                   </ul>
               </div>
           </div>
   
         <div class="section" id="experience">
-            <h2>Experience</h2>
+            <h2 class="pink">Experience</h2>
             <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: baseline;">
                     <span style="font-weight: bold; font-size: 1.2em;">Retail Consultant & Keyholder</span>
@@ -115,9 +68,10 @@
                 </div>
                 <div><em>Aesop, San Diego, CA</em></div>
                 <ul>
-                    <li>Provide personalized client consultations to foster brand loyalty</li>
-                    <li>Use SQL queries to analyze stock availability and assess KPIs</li>
-                    <li>Manage store operations and ensure a secure environment</li>
+                    <li>Tracked foot traffic, conversion rates, and sales per hour using POS dashboards to inform strategy</li>
+                    <li>Built an Excel tool to automate KPI calculations, saving time and standardizing team reporting</li>
+                    <li>Managed inventory through stock adjustments, replenishment planning, and trend analysis</li>
+                    <li>Wrote daily performance reports with actionable insights to support team alignment and sales strategy</li>
                 </ul>
             </div>
 
@@ -162,11 +116,10 @@
         </div>
   
         <div class="section" id="projects">
-            <h2>Projects</h2>
+            <h2 class="yellow">Projects</h2>
             <div class="card">
               <div style="display: flex; justify-content: space-between; align-items: baseline;">
                     <span style="font-weight: bold; font-size: 1.2em;">LinkedIn Data Web Scraper</span>
-                    <span style="font-size: 0.95em;">May 2024</span>
                 </div>
                 <ul>
                     <li>Automated alumni data collection using Python, Selenium, and Beautiful Soup</li>
@@ -176,7 +129,6 @@
             <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: baseline;">
                     <span style="font-weight: bold; font-size: 1.2em;">Hindcasting Reservoir Water Storage Values</span>
-                    <span style="font-size: 0.95em;">Dec 2023</span>
                 </div>
                 <ul>
                     <li>Designed a PostgreSQL database to manage historical reservoir data</li>
@@ -184,9 +136,10 @@
                     <li>Built an interactive Django dashboard to visualize predictions and insights</li>
                 </ul>
             </div>
+        </div>
   
-        <div class="section" id="skills">
-            <h2>Skills & Certifications</h2>
+        <div class="section" >
+            <h2 class="purple">Skills & Certifications</h2>
                 <div class="tags">
                     <span class="tag">CompTIA Network+</span>
                     <span class="tag">Java</span>
@@ -200,6 +153,7 @@
                     <span class="tag">Technical Mentorship</span>
                 </div>
             </div>
+            </div>
             <div>
                 <hr style = "border-top: 4px solid #4357ad; text-align: center; ">
                 <p class = "footer">
@@ -208,7 +162,6 @@
                 </p>
             </div>
         </div>
-    </div>
     </body>
    
 </html>
