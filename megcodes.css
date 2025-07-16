@@ -431,3 +431,7 @@ h1 {
       transform: translate(0);
    }
 }
+
+.pink {
+   color: #f28482;
+}
