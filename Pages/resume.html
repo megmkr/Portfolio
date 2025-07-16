@@ -29,20 +29,66 @@
          <a href="../index.html" class = "house-icon"> <img border="0" alt="Home" src="../Images/House.png" width="60" height="60"> </a>
          <script src="../app.js"></script>
       </div>
+      <style>
+  body {
+    margin: 0;
+  }
 
-   </head>
-   <body style="justify-content: center;">
-      <div class="container" style="justify-content: center;">
-        <h1 style="text-align: center">
-          <span style="font-family: 'Redaction 20'; font-size: 6.5vw ">R</span>
-          <span style="font-family: 'Redaction 35'; font-size: 6.5vw ">e</span>
-          <span style="font-family: 'Redaction 50'; font-size: 6.5vw ">s</span>
-          <span style="font-family: 'Redaction 70'; font-size: 6.5vw ">u</span>
-          <span style="font-family: 'Redaction 70'; font-size: 6.5vw ">m</span>
-          <span style="font-family: 'Redaction 100'; font-size: 6.5vw ">e</span>
+  .main-layout {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+  }
 
-          </h1>
-  
+  .header {
+    width: 30vw;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  .header h1 {
+    font-family: 'Redaction 50';
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 40px;
+  }
+
+  /* --------- Mobile Layout --------- */
+  @media (max-width: 768px) {
+    .main-layout {
+      flex-direction: column;
+    }
+
+    .header {
+      width: 100%;
+    }
+
+    .header h1 {
+      writing-mode: initial;
+      font-size: 3rem;
+    }
+  }
+</style>
+    </head>
+    <body style="margin: 0; padding: 0; font-family: sans-serif;">
+    <div class = "main-layout" >
+        <div class="header" >
+            <h1 style=" font-family: 'Redaction 50'">
+            <span style="font-family: 'Redaction 20';">R</span><span style="font-family: 'Redaction 35';">e</span><span style="font-family: 'Redaction 50';">s</span><span style="font-family: 'Redaction 70';">u</span><span style="font-family: 'Redaction 70';  ">m</span><span style="font-family: 'Redaction 100'; ">e</span>
+
+            </h1>
+        </div>
+        <div class = "content" style="font-family: 'Nagel';">
           <div class="section" id="education">
               <h2>Education</h2>
               <div class="card">
@@ -60,9 +106,9 @@
               </div>
           </div>
   
-          <div class="section" id="experience">
-              <h2>Experience</h2>
-              <div class="card">
+        <div class="section" id="experience">
+            <h2>Experience</h2>
+            <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: baseline;">
                     <span style="font-weight: bold; font-size: 1.2em;">Retail Consultant & Keyholder</span>
                     <span style="font-size: 0.95em;">Jul 2024 – Present</span>
@@ -73,9 +119,9 @@
                     <li>Use SQL queries to analyze stock availability and assess KPIs</li>
                     <li>Manage store operations and ensure a secure environment</li>
                 </ul>
-                </div>
+            </div>
 
-                <div class="card">
+            <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: baseline;">
                     <span style="font-weight: bold; font-size: 1.2em;">Code Coach</span>
                     <span style="font-size: 0.95em;">Jul 2024 – Jun 2025</span>
@@ -86,9 +132,9 @@
                     <li>Design and adapt curriculum for diverse learning styles</li>
                     <li>Foster long-term engagement through strong student and parent relationships</li>
                 </ul>
-                </div>
+            </div>
 
-                <div class="card">
+            <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: baseline;">
                     <span style="font-weight: bold; font-size: 1.2em;">Student Grader & Tutor</span>
                     <span style="font-size: 0.95em;">Jan 2022 – May 2024</span>
@@ -99,7 +145,7 @@
                     <li>Provided detailed feedback to improve student understanding</li>
                     <li>Conducted weekly tutoring sessions on coding, debugging, and problem-solving</li>
                 </ul>
-                </div>
+            </div>
 
             <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: baseline;">
@@ -112,10 +158,10 @@
                     <li>Built strong 1:1 relationships with residents to foster trust and engagement within the dorm community</li>
                     <li>Promoted a positive living environment through conflict resolution, inclusive programming, and community-building initiatives</li>
                 </ul>
-                </div>
             </div>
+        </div>
   
-          <div class="section" id="projects">
+        <div class="section" id="projects">
             <h2>Projects</h2>
             <div class="card">
               <div style="display: flex; justify-content: space-between; align-items: baseline;">
@@ -126,7 +172,7 @@
                     <li>Automated alumni data collection using Python, Selenium, and Beautiful Soup</li>
                     <li>Reduced manual effort and improved accuracy in career tracking</li>
                 </ul>
-                </div>
+            </div>
             <div class="card">
                 <div style="display: flex; justify-content: space-between; align-items: baseline;">
                     <span style="font-weight: bold; font-size: 1.2em;">Hindcasting Reservoir Water Storage Values</span>
@@ -137,30 +183,32 @@
                     <li>Developed a Python pipeline for data preprocessing and ML model training</li>
                     <li>Built an interactive Django dashboard to visualize predictions and insights</li>
                 </ul>
-          </div>
+            </div>
   
-          <div class="section" id="skills">
-              <h2>Skills & Certifications</h2>
-              <div class="tags">
-                  <span class="tag">CompTIA Network+</span>
-                  <span class="tag">Java</span>
-                  <span class="tag">C++</span>
-                  <span class="tag">Python</span>
-                  <span class="tag">PostgreSQL</span>
-                  <span class="tag">Django</span>
-                  <span class="tag">AWS</span>
-                  <span class="tag">UNIX</span>
-                  <span class="tag">Git</span>
-                  <span class="tag">Technical Mentorship</span>
-              </div>
-          </div>
-      </div>
-  </body>
-   <div>
-      <hr style = "border-top: 4px solid #4357ad; text-align: center; ">
-      <p class = "footer">
-         Coded With &#10084 <br>
-         Megan Mkrtchyan ©2025 <br>
-      </p>
-   </div>
+        <div class="section" id="skills">
+            <h2>Skills & Certifications</h2>
+                <div class="tags">
+                    <span class="tag">CompTIA Network+</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Django</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">UNIX</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">Technical Mentorship</span>
+                </div>
+            </div>
+            <div>
+                <hr style = "border-top: 4px solid #4357ad; text-align: center; ">
+                <p class = "footer">
+                    Coded With &#10084 <br>
+                    Megan Mkrtchyan ©2025 <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    </body>
+   
 </html>

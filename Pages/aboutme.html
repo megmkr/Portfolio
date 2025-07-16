@@ -41,20 +41,44 @@
          
       </div>
       <script src="../app.js"></script>
+      <style>
+         .about-container {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         gap: 2rem;
+         padding: 2rem;
+         }
+
+         /* Make the image responsive */
+         .about-image img {
+         max-width: 100%;
+         height: auto;
+         border-radius: 12px;
+         }
+
+         /* Stack on mobile */
+         @media (max-width: 768px) {
+         .about-container {
+            flex-direction: column;
+         }
+         }
+      </style>
    </head>
    <body>
 
-  <section class="container">
-    <div class="text">
+  <section class="about-container">
+    <div>
       <h1 style="text-align: left;margin-left: 30px; color: #4357ad;">
-          <span style="font-family: 'Redaction 20'; font-size: 6.5vw ">A</span>
-          <span style="font-family: 'Redaction 35'; font-size: 6.5vw ">b</span>
-          <span style="font-family: 'Redaction 50'; font-size: 6.5vw ">o</span>
-          <span style="font-family: 'Redaction 70'; font-size: 6.5vw ">u</span>
-          <span style="font-family: 'Redaction 70'; font-size: 6.5vw ">t</span>
-          <span> </span>
-          <span style="font-family: 'Redaction 100'; font-size: 6.5vw ">M</span>
-          <span style="font-family: 'Redaction 100'; font-size: 6.5vw ">e</span>
+          <span class="glitch" data-glitch="A" style="font-family: 'Redaction 20'; font-size: 6.5vw; display: inline-block; position: relative;" data-text="A">A</span>
+<span class="glitch" data-glitch="b" style="font-family: 'Redaction 35'; font-size: 6.5vw; display: inline-block; position: relative;" data-text="b">b</span>
+<span class="glitch" data-glitch="o" style="font-family: 'Redaction 50'; font-size: 6.5vw; display: inline-block; position: relative;" data-text="o">o</span>
+<span class="glitch" data-glitch="u" style="font-family: 'Redaction 70'; font-size: 6.5vw; display: inline-block; position: relative;" data-text="u">u</span>
+<span class="glitch" data-glitch="t" style="font-family: 'Redaction 70'; font-size: 6.5vw; display: inline-block; position: relative;" data-text="t">t</span>
+<span> </span>
+<span class="glitch" data-glitch="M" style="font-family: 'Redaction 100'; font-size: 6.5vw; display: inline-block; position: relative;" data-text="M">M</span>
+<span class="glitch" data-glitch="e" style="font-family: 'Redaction 100'; font-size: 6.5vw; display: inline-block; position: relative;" data-text="e">e</span>
 
           </h1>
       <p>
@@ -73,7 +97,7 @@ Working in <span class="pink">sales at Aesop</span> has fueled this passion furt
 
    
     </div>
-    <div class="image">
+    <div class="about-image">
       <img src="../Images/Headshot B&W.jpeg" alt="Headshot" />
     </div>
   </section>
